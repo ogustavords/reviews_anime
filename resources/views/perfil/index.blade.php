@@ -1,14 +1,14 @@
 <x-app-layout>
 
     <div class="container">
-        <h3>Your Reviews</h3>
+        <h3>Suas reviews</h3>
         <div class="card">
             <div class="card-title">Review 1</div>
-            <div class="card-description">Review text...</div>
+            <div class="card-description">Review exemplo...</div>
         </div>
         <div class="card">
             <div class="card-title">Review 2</div>
-            <div class="card-description">Review text...</div>
+            <div class="card-description">Review exemplo...</div>
         </div>
     </div>
 
@@ -17,7 +17,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            margin-top: 20px; /* Espaço de margem superior */
+            margin-top: 20px; 
         }
 
         .card {
