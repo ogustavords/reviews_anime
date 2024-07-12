@@ -20,4 +20,7 @@ Route::get('/anime/{id}', [AnimeController::class, 'details'])->name('anime.deta
 Route::get('/anime/{id}/review', [ReviewController::class, 'create'])->name('review.create');
 Route::post('/anime/{id}/review', [ReviewController::class, 'store'])->name('review.store');
 
-Route::get('/perfil', [ProfileController::class, 'show'])->name('perfil.show');
+Route::get('/perfil', [ReviewController::class, 'index'])->name('perfil.show');
+Route::get('/perfil/review/{id}/edit', [ReviewController::class, 'edit'])->name('review.edit');
+Route::put('/perfil/review/{id}', [ReviewController::class, 'update'])->name('review.update');
+Route::delete('/perfil/review/{id}', [ReviewController::class, 'destroy'])->name('review.destroy');
