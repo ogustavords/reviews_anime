@@ -8,7 +8,7 @@ class AnimeController extends Controller
 {
     public function index()
     {
-        return view('dashboard'); // Atualizado para carregar o dashboard
+        return view('dashboard'); 
     }
 
     public function details($id)

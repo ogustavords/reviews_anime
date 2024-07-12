@@ -42,8 +42,8 @@
         }
 
         .anime-image {
-            height: 200px; /* Ajuste conforme necessário */
-            background-color: #555; /* Cor de fundo temporária */
+            height: 200px; 
+            background-color: #555; 
             margin-bottom: 20px;
         }
 

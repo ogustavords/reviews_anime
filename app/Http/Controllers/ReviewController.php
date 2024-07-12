@@ -8,11 +8,10 @@ class ReviewController extends Controller
 {
     public function index()
     {
-        // Dados estáticos de exemplo
+        // dados estáticos de exemplo
         $reviews = [
             ['id' => 1, 'content' => 'Review 1 exemplo...'],
             ['id' => 2, 'content' => 'Review 2 exemplo...'],
-            // Adicione mais reviews estáticas conforme necessário
         ];
 
         return view('perfil.index', ['reviews' => $reviews]);
@@ -25,7 +24,6 @@ class ReviewController extends Controller
 
     public function store(Request $request, $id)
     {
-        // Aqui você pode adicionar lógica para armazenar a revisão no banco de dados
 
         return redirect()->route('anime.details', ['id' => $id])->with('success', 'Review submitted!');
     }
